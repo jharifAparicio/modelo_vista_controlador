@@ -12,12 +12,10 @@ namespace VIEW {
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
-	{
+	public ref class MyForm : public System::Windows::Forms::Form {
 	public:
-		MyForm(void)
-		{
-			InitializeComponent();
+		MyForm (void) {
+			InitializeComponent ();
 			//
 			//TODO: Add the constructor code here
 			//
@@ -27,10 +25,8 @@ namespace VIEW {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~MyForm()
-		{
-			if (components)
-			{
+		~MyForm () {
+			if (components) {
 				delete components;
 			}
 		}
@@ -74,8 +70,7 @@ namespace VIEW {
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
-		void InitializeComponent(void)
-		{
+		void InitializeComponent (void) {
 			this->cbbNames = (gcnew System::Windows::Forms::ComboBox ());
 			this->tbnames = (gcnew System::Windows::Forms::TextBox ());
 			this->messenge = (gcnew System::Windows::Forms::Label ());
@@ -276,7 +271,7 @@ namespace VIEW {
 #pragma endregion
 	private: System::Void btnView_Click (System::Object ^sender, System::EventArgs ^e) {
 		this->tbnames->Text = this->cbbNames->Text;
-		this->messenge->Text = "Hola a todos " ;
+		this->messenge->Text = "Hola a todos ";
 	}
 	private: System::Void btClean_Click (System::Object ^sender, System::EventArgs ^e) {
 		this->tbnames->Text = "";
@@ -299,5 +294,5 @@ namespace VIEW {
 	private: System::Void btnClose_Click (System::Object ^sender, System::EventArgs ^e) {
 		this->Close ();
 	}
-};
+	};
 }
