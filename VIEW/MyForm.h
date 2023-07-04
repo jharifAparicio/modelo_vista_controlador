@@ -292,7 +292,7 @@ namespace VIEW {
 														  Convert::ToInt32 (this->tbNum2->Text));
 	}
 	private: System::Void btnClose_Click (System::Object ^sender, System::EventArgs ^e) {
-		this->Close ();
+		this->Close();
 	}
 	};
 }
